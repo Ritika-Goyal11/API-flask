@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Location Information for IP Address {{ data.ip }}</h1>
+        </div>
+        <div class="info-card">
+            <!-- <img src="{{ data.country_flag }}" alt="Country Flag" class="flag"> -->
+            <table id="dataTable">
+                <!-- <tr><th>Property</th><th>Value</th></tr> -->
+                <tr><td>City</td><td>{{ data.city }}</td></tr>
+                <tr><td>Country</td><td>{{ data.country }}</td></tr>
+                <tr><td>State</td><td>{{ data.state }}</td></tr>
+                <tr><td>ZIP Code</td><td>{{ data.zip_code }}</td></tr>
+                <tr><td>Current Time</td><td>{{ data.current_time }}</td></tr>
+                <tr><td>Time Zone</td><td>{{ data.time_zone }}</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([{{ data.latitude }}, {{ data.longitude }}], 10);
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        L.marker([ {{data.latitude}}, {{data.longitude}}]).addTo(map)
+            .bindPopup("{{ data.latitude }}, {{ data.longitude }}")
+            .openPopup();
+        map.setView([lat, lng], 13);
+    </script>
+
+</body>
+</html>
