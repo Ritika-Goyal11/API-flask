@@ -70,8 +70,7 @@ To run the application using Docker, following these steps:
    ```bash
    docker run -p 5000:5000 --env-file .env geolocation-flask-app
    ```
-
-   Accessing the application at `http://localhost:5000`.
+**Link to Docker image:**
    ```bash
   docker pull ritikagoyal11/geo-location:latest
    ```
