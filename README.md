@@ -72,7 +72,6 @@ To run the application using Docker, following these steps:
    ```
 
    Accessing the application at `http://localhost:5000`.
-
    ```bash
   docker pull ritikagoyal11/geo-location:latest
    ```
