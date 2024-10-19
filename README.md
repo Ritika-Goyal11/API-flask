@@ -23,21 +23,19 @@ This project is a simple web application built with Flask that allows users to r
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/geolocation-flask-app.git
+   git clone https://github.com/Ritika-Goyal11/API-flask
    cd geolocation-flask-app
    ```
 
 2. **Set up your environment variables:**
 
-   Create a `.env` file in the root directory and add your API key:
+   Creating a `.env` file in the root directory and adding the API key:
 
    ```
-   API_KEY=your_api_key_here
+   API_KEY=api_key_here
    ```
 
 3. **Install dependencies:**
-
-   Ensure you have `requirements.txt` set up and install the required packages:
 
    ```bash
    pip install -r requirements.txt
@@ -54,13 +52,13 @@ This project is a simple web application built with Flask that allows users to r
    The application will be available at `http://localhost:5000`.
 
 2. **Access the application:**
-   - Go to the home page and input an IP address to fetch geolocation data.
+   - Going to the home page and giving an IP address as input to fetch geolocation data.
    ![Input Page](https://github.com/user-attachments/assets/151a5696-2a9a-4620-9f8e-b1f6dd544e1a)
 
 
 ### Using Docker
 
-To run the application using Docker, follow these steps:
+To run the application using Docker, following these steps:
 
 1. **Build the Docker image:**
 
@@ -74,7 +72,7 @@ To run the application using Docker, follow these steps:
    docker run -p 5000:5000 --env-file .env geolocation-flask-app
    ```
 
-   Access the application at `http://localhost:5000`.
+   Accessing the application at `http://localhost:5000`.
 
    ```bash
   docker pull ritikagoyal11/geo-location:latest
@@ -82,7 +80,7 @@ To run the application using Docker, follow these steps:
 
 ### Pushing to GitHub
 
-To push your changes to GitHub, follow these steps:
+To push the changes to GitHub, following the steps mentioned below:
 
 1. **Stage the changes:**
 
@@ -112,7 +110,7 @@ geolocation-flask-app/
 ├── templates/              # HTML templates
 │   ├── home.html          # Display location information
 │   ├── input.html         # Input form for IP address
-│   └── error.html         # Error display page
+│   └── error.html         # Error display page in case of wrong IP address
 └── static/                 # Static files
     └── style.css          # Custom styles for the app
 ```
