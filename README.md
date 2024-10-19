@@ -1,7 +1,5 @@
 # Geolocation Flask App
 
-![Geolocation Flask App](https://via.placeholder.com/800x200?text=Geolocation+Flask+App)
-
 ## Overview
 
 This project is a simple web application built with Flask that allows users to retrieve geolocation information based on an IP address. Utilizing the [IP Geolocation API](https://ipgeolocation.io/), users can input an IP address to get details about its location.
