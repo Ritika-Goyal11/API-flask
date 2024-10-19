@@ -50,7 +50,6 @@ This project is a simple web application built with Flask that allows users to r
    ```
 
    The application will be available at `http://localhost:5000`.
-
 2. **Access the application:**
    - Going to the home page and giving an IP address as input to fetch geolocation data.
    ![Input Page](https://github.com/user-attachments/assets/151a5696-2a9a-4620-9f8e-b1f6dd544e1a)
