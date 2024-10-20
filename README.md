@@ -53,6 +53,8 @@ This project is a simple web application built with Flask that allows users to r
 2. **Access the application:**
    - Going to the home page and giving an IP address as input to fetch geolocation data.
    ![Input Page](https://github.com/user-attachments/assets/151a5696-2a9a-4620-9f8e-b1f6dd544e1a)
+   - If the IP Address has an error, the following error page is displayed.
+   ![Error Page](https://github.com/user-attachments/assets/895d71b2-5ffc-4b67-9604-0d25d5f1a3b4)
 
 
 ### Using Docker
@@ -73,28 +75,6 @@ To run the application using Docker, following these steps:
 **Link to Docker image:**
    ```bash
   docker pull ritikagoyal11/geo-location:latest
-   ```
-
-### Pushing to GitHub
-
-To push the changes to GitHub, following the steps mentioned below:
-
-1. **Stage the changes:**
-
-   ```bash
-   git add .
-   ```
-
-2. **Commit the changes:**
-
-   ```bash
-   git commit -m "First commit"
-   ```
-
-3. **Push to the main branch:**
-
-   ```bash
-   git push origin main
    ```
 
 ## File Structure
