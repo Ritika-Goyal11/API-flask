@@ -56,6 +56,8 @@ This project is a simple web application built with Flask that allows users to r
    - If the IP Address has an error, the following error page is displayed.
    ![Error Page](https://github.com/user-attachments/assets/895d71b2-5ffc-4b67-9604-0d25d5f1a3b4)
 
+## Final Page
+![IP Information Page](https://github.com/user-attachments/assets/e90e09e8-1211-4451-915a-4b8eca879a1d)
 
 ### Using Docker
 
@@ -91,5 +93,4 @@ geolocation-flask-app/
 └── static/                 # Static files
     └── style.css          # Custom styles for the app
 ```
-## Final Page
-![IP Information Page](https://github.com/user-attachments/assets/e90e09e8-1211-4451-915a-4b8eca879a1d)
+
